@@ -6,3 +6,4 @@ elif  (num % 2 != 0):
 else:
     print("é zero")
 print("Fim!")
+
