@@ -1,14 +1,17 @@
-var nasc = parseInt(prompt("Digite seu ano de nascimento:"));
-let nome = prompt("Digite seu nome: ");
-const viva = true;
-let altura = parseFloat(prompt("Digite sua altura em metros:"));
-let idade;
+var nome = "Leticia"
+let nasc = 2008
+const viva = confirm ("clique aqui se estiver vivo")
+let altura;
 
-if (viva) {
-    idade = 2026 - nasc;
-    alert(`${nome} você tem ${idade} anos.`);
-} else {
-    alert("Você está morta.");
+function calcIdade(ano = 2026){
+    let idade = ano - nasc;
+    console.log(`idade dentro da funcao:, ${idade}`);
+    return idade;
 }
-
-alert("Fim!");
+alert(`idade fora da funcao: ${calcIdade()}`);
+/*console.log(`idade fora da função: ${idade}`);
+*/
+if(vivo){
+    altura = prompt ("Digite sua altura");
+}
+ 
